@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Home gallery/day-and-night.png" type="image/x-icon">
+    <title>Shop</title>
+    <style>
+        a:hover {
+            color: #b2c5d1;
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: #000000;
+            border-radius: 10px;
+        }
+        
+        #icons {
+            padding-left: 1px;
+            margin: 0;
+        }
+        
+        #box_icons {
+            width: 50px;
+            padding: 8px;
+        }
+        
+        #box_icons:hover {
+            transform: scale(1.2);
+        }
+        
+        .fix_box {
+            background-color: #EDF2F4;
+            border-radius: 0px 15px 15px 0px;
+            position: fixed;
+            top: 110px;
+            left: -5px;
+            width: 70px;
+            height: 545px;
+            text-align: center;
+            z-index: 10;
+            opacity: 95%;
+        }
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #EDF2F4;
+            color: #000000;
+            text-align: center;
+            border-radius: 6px;
+            padding: 30px 0;
+            top: 10px;
+            left: 120%;
+            position: absolute;
+            z-index: 1;
+            font-size: small;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+        
+        #pic {
+            position: absolute;
+            height: 500px;
+        }
+        
+        #bags {
+            position: absolute;
+            top: 510px;
+        }
+        
+        #clothing {
+            position: absolute;
+            top: 1070px;
+        }
+        
+        #grooming {
+            position: absolute;
+            top: 1600px;
+        }
+        
+        #comfort {
+            position: absolute;
+            top: 2380px;
+        }
+        
+        #electronics {
+            position: absolute;
+            top: 3100px;
+        }
+        
+        #health {
+            position: absolute;
+            top: 3750px;
+        }
+        
+        #additional {
+            position: absolute;
+            top: 4430px;
+        }
+        
+        #covid {
+            position: absolute;
+            top: 5250px;
+        }
+        
+        #shop_subhead1 {
+            position: relative;
+            font-size: 30px;
+            background-color: #EDF2F4;
+            width: 1485px;
+            height: 50px;
+            display: block;
+            text-align: center;
+        }
+        
+        #middle {
+            text-align: center;
+            width: 33%;
+        }
+        
+        .footer {
+            position: absolute;
+            top: 5900px;
+            left: -20px;
+            width: 100%;
+            height: 30%;
+            background-color: rgb(32, 32, 32);
+            color: #cfcfcf;
+        }
+        
+        #copy {
+            position: absolute;
+            bottom: 0px;
+            font-size: 15px;
+        }
+        
+        #badges {
+            position: absolute;
+            right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a id="pic"><img src="banner.png" height="500px" width="1500px"><br></a>
+
+    </div>
+    <div class="fix_box">
+
+        <div class="tooltip">
+            <a id="icons" href="#bags"><img id="box_icons" src="logo6.png"><br></a>
+            <span class="tooltiptext">Car Wash Accessories</span>
+        </div>
+        <div class="tooltip">
+            <a id="icons" href="#clothing"><img id="box_icons" src="logo3.png"><br></a>
+            <span class="tooltiptext">Audio System</span>
+        </div>
+        <div class="tooltip">
+            <a id="icons" href="#grooming"><img id="box_icons" src="logo4.png"><br></a>
+            <span class="tooltiptext">Lubricants</span>
+        </div>
+        <div class="tooltip">
+            <a id="icons" href="#comfort"><img id="box_icons" src="logo2.png"><br></a>
+            <span class="tooltiptext">Tyre & Puncture Kit</span>
+        </div>
+        <div class="tooltip">
+            <a id="icons" href="#electronics"><img id="box_icons" src="MicrosoftTeams-image.png"><br></a>
+            <span class="tooltiptext">Seats</span>
+        </div>
+        <div class="tooltip">
+            <a id="icons" href="#health"><img id="box_icons" src="logo5.png"><br></a>
+            <span class="tooltiptext">Interior Accessories</span>
+        </div>
+        <div class="tooltip">
+            <a id="icons" href="#additional"><img id="box_icons" src="car-repair.png"><br></a>
+            <span class="tooltiptext">Spare Parts</span>
+        </div>
+        <div class="tooltip">
+            <a id="icons" href="#covid"><img id="box_icons" src="logo7.png"><br></a>
+            <span class="tooltiptext">Extra Fittings</span>
+        </div>
+    </div>
+
+
+    <section id="bags">
+
+        <div id="shop_subhead1">
+            CAR WASH ACCESSORIES
+        </div>
+        <table cellspacing=20px>
+
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="#"><img src="car wash accessories/wash.JPG" width="320px" height="370px"><br></a>
+
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07B9H36RR/ref=cm_sw_r_apan_glt_fabc_7AZMXVZ7G9ZX2AWBJXZZ?_encoding=UTF8&psc=1"><img src="car wash accessories/wash1.JPG" width="360px" height="400px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B094FZ798J/ref=cm_sw_r_apan_glt_fabc_FEVT3REM30JV4VF5X2RQ?_encoding=UTF8&psc=1"><img src="car wash accessories/wash2.JPG" width="460px" height="400px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Shampoo</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Brush</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Snowfoam</p>
+                </td>
+            </tr>
+
+        </table>
+    </section>
+    <section id="clothing">
+        <div id="shop_subhead1">
+            AUDIO SYSTEM
+        </div>
+        <table cellspacing=20px>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08L1W52D2/ref=cm_sw_r_apan_glt_fabc_EM8HMHVB22FTPJ6NP3C3"><img src="audio/audio.JPG" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07CK7BPQF/ref=cm_sw_r_apan_glt_fabc_T0CVW0F3CV0DVQP3V6JG?_encoding=UTF8&psc=1"><img src="audio/speaker.JPG" width="400px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07S18MXZ6/ref=cm_sw_r_apan_glt_fabc_R7N847X8ZF98BGW4B163"><img src="audio/audio1.JPG" width="350px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Dulcet Audio</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Pioneer Woofer</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Kenwood Audio</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="grooming">
+        <div id="shop_subhead1">
+            LUBRICANTS
+        </div>
+        <table cellspacing=20px>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08SMWPSF8/ref=cm_sw_r_apan_glt_fabc_ZHWQ86P0GBPBS4WMHJTD?_encoding=UTF8&psc=1"><img src="Lubricants/Lub1.JPG" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B091GBSXHK/ref=cm_sw_r_apan_glt_fabc_JHHCZRGNK1JZRV3M38NY"><img src="Lubricants/Lub2.JPG" width="360px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07JFLNWM5/ref=cm_sw_r_apan_glt_fabc_03WQ4MRRGY1T2XY7GSB0"><img src="Lubricants/Lub3.JPG" width="460px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">HP Lubricants</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Aerol® Silicone Lubricant Spray</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Castrol Edge 5W-40 </p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="comfort">
+        <div id="shop_subhead1">
+            TYRE & PUNCTURE KIT
+        </div>
+        <table cellspacing=20px>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07MT97SPX/ref=cm_sw_r_apan_glt_fabc_KZCS86C4Y2Q85AFKZR57"><img src="tyre and punture/alloy.JPG" width="360px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B06XKZGBC8/ref=cm_sw_r_apan_glt_fabc_TVR6HT0J5PYFVEWK0YK4?_encoding=UTF8&psc=1"><img src="tyre and punture/jack.JPG" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08N562ZRS/ref=cm_sw_r_apan_glt_fabc_B1XC75FR6BVC5TFPH3T4"><img src="tyre and punture/tyre.JPG" width="460px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">SS Racing Wheel</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">GNEY Scissor Jack</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Ceat Secura Drive</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="electronics">
+        <div id="shop_subhead1">
+            SEATS
+        </div>
+        <table cellspacing=20px>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="product-detail-card-slider-master/index.php?productID=SP08"><img src="Seat and raincover/Premiumseat.JPG" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/Retractable-Multiple-Compatible-Smartphones-Multicolor/dp/B08ZXMCB95/ref=sr_1_2?dchild=1&keywords=all+in+one+phone+charger&qid=1627149953&sr=8-2"><img src="Seat and raincover/carcover.JPG" width="360px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/Fujifilm-Instax-Mini-Ice-Blue/dp/B06WW64YM6/ref=sr_1_4?dchild=1&keywords=camera&qid=1627150051&sr=8-4"><img src="Seat and raincover/babyseat.JPG" width="360px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">PU Leatherite car seat</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">PYTHERA Car Cover</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Convertible Car Seat</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="health">
+        <div id="shop_subhead1">
+            INTERIOR ACCESSORIES
+        </div>
+        <table cellspacing=20px>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08CH2X993/ref=cm_sw_r_apan_glt_fabc_MZT0ZNZ04E6FD00T46BK?_encoding=UTF8&psc=1"><img src="Interior accessories/interior.JPG" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07M8T33KJ/ref=cm_sw_r_apan_glt_fabc_V5Y1HY2RVWHHFZEQXZ3Z"><img src="Interior accessories/interior1.JPG" width="400px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07R4DYNMR/ref=cm_sw_r_apan_glt_fabc_W6C8KFW7CMKHW9SJ0PRW"><img src="Interior accessories/interior2.JPG" width="460px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Godrej aer twist</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Air Freshener</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Mobile Phone Holder</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="additional">
+        <div id="shop_subhead1">
+            SPARE PARTS
+        </div>
+        <table cellspacing=20px>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07WH2BLBY/ref=cm_sw_r_apan_glt_fabc_KQBC2PR7E6EPQFV3ZQP9"><img src="spare parts/screw.JPG" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B0981XD1P8/ref=cm_sw_r_apan_glt_fabc_KTV56J6DC7W43SPPW1BT"><img src="spare parts/screw1.JPG" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B00STGUXWM/ref=cm_sw_r_apan_glt_fabc_2HQRT9JCM2XPYPF7YKYX"><img src="spare parts/spare.JPG" width="460px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Bonnet Stopper</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Nylon Push-Type clips</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Brushless Motor</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="covid">
+        <div id="shop_subhead1">
+            EXTRA FITTINGS
+        </div>
+        <table cellspacing=20px>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B089PR7STM/ref=cm_sw_r_apan_glt_fabc_R37WV6JBS8W526D75RS3"><img src="extra fittings/bumber.JPG" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08M6Z7V6L/ref=cm_sw_r_apan_glt_fabc_TG07AR6XD9MQKF5VEPQP"><img src="extra fittings/dash.JPG" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08C3M65KF/ref=cm_sw_r_apan_glt_fabc_B20X1HFCPGPKAN1TYMW8"><img src="extra fittings/light.JPG" width="460px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Universal Black Front Bumper</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Reverse Sensor</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Neolite Halogen Lamp</p>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+    <div class="footer">
+        <div class="footer-content" id="badges">
+            <a href="https://play.google.com/store"><img src="banner.jpg" width="1500" height="250px" right="-10%"></a>
+
+        </div>
+</body>
+
+</html>
