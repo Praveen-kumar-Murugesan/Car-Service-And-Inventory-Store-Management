@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Home gallery/day-and-night.png" type="image/x-icon">
+    <title>Shop | Sky Unchained</title>
+    <style>
+        a:hover {
+            color: #b2c5d1;
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: #b2c5d1;
+            border-radius: 10px;
+        }
+        
+        #icons {
+            padding-left: 1px;
+            margin: 0;
+        }
+        
+        #box_icons {
+            width: 50px;
+            padding: 8px;
+        }
+        
+        #box_icons:hover {
+            transform: scale(1.2);
+        }
+        
+        .fix_box {
+            background-color: #b2c5d1;
+            border-radius: 0px 15px 15px 0px;
+            position: fixed;
+            left: 0px;
+            top: 180px;
+            width: 60px;
+            height: 445px;
+            text-align: center;
+            z-index: 10;
+        }
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #b2c5d1;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            top: 10px;
+            left: 120%;
+            position: absolute;
+            z-index: 1;
+            font-size: small;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+        
+        #shop_img {
+            height: 82%;
+            position: absolute;
+            top: 100px;
+            right: 90px;
+            opacity: 1;
+        }
+        
+        #quote {
+            position: absolute;
+            font-weight: 700;
+            left: 120px;
+            text-align: center;
+            text-transform: uppercase;
+            top: 110px;
+            font-size: 55px;
+            line-height: 1;
+            background: -webkit-linear-gradient(rgb(104, 104, 104), #b2c5d1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        #bags {
+            position: absolute;
+            top: 800px;
+        }
+        
+        #clothing {
+            position: absolute;
+            top: 1950px;
+        }
+        
+        #grooming {
+            position: absolute;
+            top: 2600px;
+        }
+        
+        #comfort {
+            position: absolute;
+            top: 3250px;
+        }
+        
+        #electronics {
+            position: absolute;
+            top: 3900px;
+        }
+        
+        #health {
+            position: absolute;
+            top: 4550px;
+        }
+        
+        #additional {
+            position: absolute;
+            top: 5200px;
+        }
+        
+        #covid {
+            position: absolute;
+            top: 5850px;
+        }
+        
+        #shop_subhead1 {
+            position: relative;
+            font-size: 30px;
+            background-color: #b2c5d1;
+            width: 1485px;
+            height: 50px;
+            display: block;
+            text-align: center;
+        }
+        
+        #middle {
+            text-align: center;
+            width: 33%;
+        }
+        
+        .footer {
+            position: absolute;
+            top: 6500px;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background-color: rgb(32, 32, 32);
+            color: #cfcfcf;
+        }
+        
+        .footer-content {
+            padding: 50px 100px;
+            line-height: 20px;
+            font-size: 23px;
+        }
+        
+        #copy {
+            position: absolute;
+            bottom: 0px;
+            font-size: 15px;
+        }
+        
+        #badges {
+            position: absolute;
+            right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="title" href="index.html"> Sky Unchained</a>
+        <a href="index.html"><img id="logo" src="Home gallery/map.png"></a>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="fix_box">
+        <div class="tooltip">
+            <a id="icons" href="#bags"><img id="box_icons" src="Icons/suitcase.png"><br></a>
+            <span class="tooltiptext">Bags + Luggage</span>
+        </div>
+        <div class="tooltip">
+            <a id="icons" href="#clothing"><img id="box_icons" src="Icons/fashion.png"><br></a>
+            <span class="tooltiptext">Clothing</span>
+        </div>
+        <div class="tooltip">
+            <a id="icons" href="#grooming"><img id="box_icons" src="Icons/razor.png"><br></a>
+            <span class="tooltiptext">Grooming</span>
+        </div>
+        <div class="tooltip">
+            <a id="icons" href="#comfort"><img id="box_icons" src="Icons/neck-pillow.png"><br></a>
+            <span class="tooltiptext">Comfort</span>
+        </div>
+        <div class="tooltip">
+            <a id="icons" href="#electronics"><img id="box_icons" src="Icons/charger.png"><br></a>
+            <span class="tooltiptext">Electronics</span>
+        </div>
+        <div class="tooltip">
+            <a id="icons" href="#health"><img id="box_icons" src="Icons/heart-beat.png"><br></a>
+            <span class="tooltiptext">Health</span>
+        </div>
+        <div class="tooltip">
+            <a id="icons" href="#additional"><img id="box_icons" src="Icons/detergent.png"><br></a>
+            <span class="tooltiptext">Additional</span>
+        </div>
+        <div class="tooltip">
+            <a id="icons" href="#covid"><img id="box_icons" src="Icons/mask.png"><br></a>
+            <span class="tooltiptext">Covid Essentials</span>
+        </div>
+    </div>
+    <section id="main">
+        <img id="shop_img" src="shopping4.jpg">
+        <p id="quote">SHOPPING SHOPPING<br>SHOPPING SHOPPING<br>SHOPPING SHOPPING<br>SHOPPING SHOPPING<br>SHOPPING SHOPPING<br>SHOPPING SHOPPING<br>SHOPPING SHOPPING<br>SHOPPING SHOPPING<br>SHOPPING SHOPPING<br>SHOPPING SHOPPING<br>SHOPPING SHOPPING</p>
+    </section>
+
+    <section id="bags">
+
+        <div id="shop_subhead1">
+            BAGS AND LUGGAGES
+        </div>
+        <table cellspacing=20px>
+
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08GFW377B/ref=cm_sw_r_apan_glt_fabc_KF6PSZKVZX6EMH4RZEVM?th=1"><img src="https://images-na.ssl-images-amazon.com/images/I/51aRa0KJjUL._SL1280_.jpg" width="460px" height="400px"><br></a>
+
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07B9H36RR/ref=cm_sw_r_apan_glt_fabc_7AZMXVZ7G9ZX2AWBJXZZ?_encoding=UTF8&psc=1"><img src="https://images-na.ssl-images-amazon.com/images/I/71cjrnqjqqL._SL1000_.jpg" width="460px" height="400px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B094FZ798J/ref=cm_sw_r_apan_glt_fabc_FEVT3REM30JV4VF5X2RQ?_encoding=UTF8&psc=1"><img src="https://images-na.ssl-images-amazon.com/images/I/51IDZXBIsRS._SL1100_.jpg" width="460px" height="400px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Ziplocks</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Travel Organizer</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Cosmetic Bag</p>
+                </td>
+            </tr>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08ZK1CV8N/ref=cm_sw_r_apan_glt_fabc_53H0NP8X14TZ5K1ZNN2J"><img src="https://images-na.ssl-images-amazon.com/images/I/61TG1ppOUaS._UL1500_.jpg" width="300px" height="400px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B01G5I8YLC/ref=cm_sw_r_apan_glt_fabc_5S2975SQPXC6DX69P5AN?_encoding=UTF8&psc=1"><img src="https://images-na.ssl-images-amazon.com/images/I/91T4CGVR6eL._SL1500_.jpg" width="250px" height="400px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08JQLZQJD/ref=cm_sw_r_apan_glt_fabc_G928CB7CXN5P2A65QB62"><img src="https://images-na.ssl-images-amazon.com/images/I/810BE5RduvL._SL1500_.jpg" width="400px" height="400px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Caprese Chia (Grey)</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Wildcraft 45 Ltrs Grey and Orange Rucksack</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Skybags Rover</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="clothing">
+        <div id="shop_subhead1">
+            CLOTHING
+        </div>
+        <table cellspacing=20px>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08L1W52D2/ref=cm_sw_r_apan_glt_fabc_EM8HMHVB22FTPJ6NP3C3"><img src="https://images-na.ssl-images-amazon.com/images/I/61Il3COlGML._UL1224_.jpg" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07CK7BPQF/ref=cm_sw_r_apan_glt_fabc_T0CVW0F3CV0DVQP3V6JG?_encoding=UTF8&psc=1"><img src="https://images-na.ssl-images-amazon.com/images/I/716FFUm0MiL._UL1500_.jpg" width="400px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07S18MXZ6/ref=cm_sw_r_apan_glt_fabc_R7N847X8ZF98BGW4B163"><img src="https://images-na.ssl-images-amazon.com/images/I/A1yVYxvAkDL._UL1500_.jpg" width="350px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Women's Cotton Top</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Men's Regular Fit T Shirt</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Women's Maxi Top</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="grooming">
+        <div id="shop_subhead1">
+            GROOMING
+        </div>
+        <table cellspacing=20px>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08SMWPSF8/ref=cm_sw_r_apan_glt_fabc_ZHWQ86P0GBPBS4WMHJTD?_encoding=UTF8&psc=1"><img src="https://images-na.ssl-images-amazon.com/images/I/71akA0CdsAL._SL1500_.jpg" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B091GBSXHK/ref=cm_sw_r_apan_glt_fabc_JHHCZRGNK1JZRV3M38NY"><img src="https://images-na.ssl-images-amazon.com/images/I/61PojtwgbPS._SL1000_.jpg" width="360px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07JFLNWM5/ref=cm_sw_r_apan_glt_fabc_03WQ4MRRGY1T2XY7GSB0"><img src="https://images-na.ssl-images-amazon.com/images/I/71lehnzGxxL._SL1500_.jpg" width="460px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Shampoo + Conditioner</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Toothbrush + Toothpaste</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Razor</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="comfort">
+        <div id="shop_subhead1">
+            COMFORT
+        </div>
+        <table cellspacing=20px>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07MT97SPX/ref=cm_sw_r_apan_glt_fabc_KZCS86C4Y2Q85AFKZR57"><img src="https://images-na.ssl-images-amazon.com/images/I/71eQtSSzyjL._SL1500_.jpg" width="360px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B06XKZGBC8/ref=cm_sw_r_apan_glt_fabc_TVR6HT0J5PYFVEWK0YK4?_encoding=UTF8&psc=1"><img src="https://images-na.ssl-images-amazon.com/images/I/415yqVP5HbL.jpg" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08N562ZRS/ref=cm_sw_r_apan_glt_fabc_B1XC75FR6BVC5TFPH3T4"><img src="https://images-na.ssl-images-amazon.com/images/I/51T0MoiCqyL._SL1200_.jpg" width="460px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Neck Pillow</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Ear Plugs</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Eye Mask</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="electronics">
+        <div id="shop_subhead1">
+            ELECTRONICS
+        </div>
+        <table cellspacing=20px>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/Generic-Universal-Travel-Adapter-Converter/dp/B075JRLGRC/ref=sr_1_6?dchild=1&keywords=EU+adapter&qid=1627149895&sr=8-6"><img src="https://images-na.ssl-images-amazon.com/images/I/41MR8qqGy7L.jpg" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/Retractable-Multiple-Compatible-Smartphones-Multicolor/dp/B08ZXMCB95/ref=sr_1_2?dchild=1&keywords=all+in+one+phone+charger&qid=1627149953&sr=8-2"><img src="https://images-na.ssl-images-amazon.com/images/I/31JB-os5FtL.jpg" width="360px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/Fujifilm-Instax-Mini-Ice-Blue/dp/B06WW64YM6/ref=sr_1_4?dchild=1&keywords=camera&qid=1627150051&sr=8-4"><img src="https://images-na.ssl-images-amazon.com/images/I/817aVWYpblL._SL1500_.jpg" width="360px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">EU adapter</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">All-in-one phone charger</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Camera</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="health">
+        <div id="shop_subhead1">
+            HEALTH
+        </div>
+        <table cellspacing=20px>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08CH2X993/ref=cm_sw_r_apan_glt_fabc_MZT0ZNZ04E6FD00T46BK?_encoding=UTF8&psc=1"><img src="https://images-na.ssl-images-amazon.com/images/I/51ODtW1yiLL._SL1100_.jpg" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07M8T33KJ/ref=cm_sw_r_apan_glt_fabc_V5Y1HY2RVWHHFZEQXZ3Z"><img src="https://images-na.ssl-images-amazon.com/images/I/61MJz1GM2NL.jpg" width="400px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07R4DYNMR/ref=cm_sw_r_apan_glt_fabc_W6C8KFW7CMKHW9SJ0PRW"><img src="https://images-na.ssl-images-amazon.com/images/I/412tI7mQERL.jpg" width="460px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Back-pain roll-on</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">First-Aid Kit</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">ORS Powdered</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="additional">
+        <div id="shop_subhead1">
+            ADDITIONAL
+        </div>
+        <table cellspacing=20px>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B07WH2BLBY/ref=cm_sw_r_apan_glt_fabc_KQBC2PR7E6EPQFV3ZQP9"><img src="https://images-na.ssl-images-amazon.com/images/I/41m9mXkuCfL._SL1000_.jpg" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B0981XD1P8/ref=cm_sw_r_apan_glt_fabc_KTV56J6DC7W43SPPW1BT"><img src="https://images-na.ssl-images-amazon.com/images/I/315gPlJFqXS.jpg" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B00STGUXWM/ref=cm_sw_r_apan_glt_fabc_2HQRT9JCM2XPYPF7YKYX"><img src="https://images-na.ssl-images-amazon.com/images/I/81ppZEMR8FL._SL1500_.jpg" width="460px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Padlock</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Umbrella</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Energy Bar</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="covid">
+        <div id="shop_subhead1">
+            COVID ESSENTIALS
+        </div>
+        <table cellspacing=20px>
+            <tr>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B089PR7STM/ref=cm_sw_r_apan_glt_fabc_R37WV6JBS8W526D75RS3"><img src="https://images-na.ssl-images-amazon.com/images/I/615jlRh2gtL._SL1061_.jpg" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08M6Z7V6L/ref=cm_sw_r_apan_glt_fabc_TG07AR6XD9MQKF5VEPQP"><img src="https://images-na.ssl-images-amazon.com/images/I/61%2BufhNIy%2BS._SL1000_.jpg" width="460px"><br></a>
+                </td>
+                <td id="middle">
+                    <a id="icons" href="https://www.amazon.in/dp/B08C3M65KF/ref=cm_sw_r_apan_glt_fabc_B20X1HFCPGPKAN1TYMW8"><img src="https://images-na.ssl-images-amazon.com/images/I/615eb9sJapL._SL1500_.jpg" width="460px"><br></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align:center;">Masks</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Hand Sanitizer</p>
+                </td>
+                <td>
+                    <p style="text-align:center;">Disinfectant Spray</p>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+    <div class="footer">
+        <div class="footer-content">
+            <h2>SKY UNCHAINED</h2><br>
+            <h4>EST.2021</h4>
+            <p id="copy">
+                <img src="Home gallery/soc.png" height="25px"><br> Copyright &copy | All Rights Reserved
+            </p>
+            <table id="badges" cellspacing="10px">
+                <tr>
+                    <td>
+                        <a href="https://play.google.com/store"><img src="Home gallery/google.png" height="50px"></a>
+                    </td>
+                    <td>
+                        <a href="https://www.apple.com/in/app-store/"><img src="Home gallery/apple.png" height="50px"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</body>
+
+</html>
